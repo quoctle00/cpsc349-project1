@@ -5,3 +5,6 @@ module.exports = function (eleventyConfig) {
     open: true
   })
 }
+return {
+  dir: { output: "docs" },
+};

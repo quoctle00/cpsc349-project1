@@ -3,8 +3,30 @@ layout: base
 title: Home
 ---
 <header>
-    <h1>{{ title }} </h1>
+    <h1>Photos</h1>
 </header>
+
+<body>
+    <h2>Navigation</h2>
+    <ul>
+        <li><a href = "/cpsc349-project1/index.html">Home</a></li>
+        <li><a href = "/cpsc349-project1/aboutus.html">About Us</a></li>
+    </ul>
+    <h3>Description</h3>
+
+</body>
+
+<body>
+    
+    <ol>
+        {% for photo in photos.0apgfsq.media -%}
+        <a href="/cpsc349-project1/photos/{{photo.id}}">
+            <img src= "{{ photo.src.small }}" alt = "{{photo.alt}}"/>
+        </a> 
+        {% endfor -%}
+    </ol>
+
+</body>
 
 <footer>
     <hr>
@@ -14,3 +36,7 @@ title: Home
         </small>
     </p>
 </footer>
+
+<style>
+ 
+</style>

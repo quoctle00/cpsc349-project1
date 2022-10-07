@@ -1,0 +1,13 @@
+---
+layout: base
+pagination:
+  data: photos.0apgfsq.media
+  size: 1
+  alias: photo
+eleventyComputed:
+    permalink: "/cpsc349-project1/photos/{{ photo.id }}/"
+    title: "{{ photo.alt }}"
+---
+
+<img src="{{ photo.src.large }}" alt="{{ photo.alt }}" /> 
+    <h1>Photographer: {{ photo.photographer }} </h1>
