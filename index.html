@@ -2,6 +2,9 @@
 layout: base
 title: Home
 ---
+<!DOCTYPE html>
+<html lang="en">
+
 <header>
     <h1>Photos</h1>
 </header>
@@ -18,13 +21,13 @@ title: Home
 
 <body>
     
-    <ol>
+    <ul>
         {% for photo in photos.0apgfsq.media -%}
         <a href="/cpsc349-project1/photos/{{photo.id}}">
             <img src= "{{ photo.src.small }}" alt = "{{photo.alt}}"/>
         </a> 
         {% endfor -%}
-    </ol>
+    </ul>
 
 </body>
 
@@ -40,3 +43,5 @@ title: Home
 <style>
  
 </style>
+
+</html>
